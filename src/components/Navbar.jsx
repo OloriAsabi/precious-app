@@ -1,7 +1,10 @@
 import React from 'react'
 import { RiArrowDropDownLine } from "react-icons/ri";
 
-const Navbar = () => {
+
+
+const Navbar = ({data}) => {
+
   return (
     <div className=''>
         <nav className='flex justify-between pt-5 pb-5 max-w-7xl mx-auto'>
@@ -19,7 +22,7 @@ const Navbar = () => {
             <RiArrowDropDownLine fontSize={35} />
             <img
               className="rounded-full  h-12 w-12 object-cover"
-              src="https://raw.githubusercontent.com/OloriAsabi/book-images/main/src/me/IMG-4060.JPG"
+              src={data?.broker_photo}
               alt="user-profile"
             />
             </div>
